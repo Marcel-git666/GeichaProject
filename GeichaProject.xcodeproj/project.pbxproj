@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		1F092DFA2933BF3C000F43AD /* GeichaProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F092DF92933BF3C000F43AD /* GeichaProjectApp.swift */; };
-		1F092DFC2933BF3C000F43AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F092DFB2933BF3C000F43AD /* ContentView.swift */; };
 		1F092DFE2933BF3E000F43AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F092DFD2933BF3E000F43AD /* Assets.xcassets */; };
 		1F092E012933BF3E000F43AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F092E002933BF3E000F43AD /* Preview Assets.xcassets */; };
+		1F092E0A2933C079000F43AD /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F092E092933C079000F43AD /* DataModel.swift */; };
+		1F092E0D2933C0AD000F43AD /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F092E0C2933C0AD000F43AD /* Order.swift */; };
+		1F092E152933C0EB000F43AD /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F092E102933C0EB000F43AD /* CheckBoxView.swift */; };
+		1F092E162933C0EB000F43AD /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F092E112933C0EB000F43AD /* ItemRow.swift */; };
+		1F092E172933C0EB000F43AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F092E122933C0EB000F43AD /* ContentView.swift */; };
+		1F092E182933C0EB000F43AD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F092E132933C0EB000F43AD /* MainView.swift */; };
+		1F092E192933C0EB000F43AD /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F092E142933C0EB000F43AD /* BasketView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F092DF62933BF3C000F43AD /* GeichaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeichaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F092DF92933BF3C000F43AD /* GeichaProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeichaProjectApp.swift; sourceTree = "<group>"; };
-		1F092DFB2933BF3C000F43AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1F092DFD2933BF3E000F43AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F092E002933BF3E000F43AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F092E092933C079000F43AD /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		1F092E0C2933C0AD000F43AD /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		1F092E102933C0EB000F43AD /* CheckBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		1F092E112933C0EB000F43AD /* ItemRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		1F092E122933C0EB000F43AD /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1F092E132933C0EB000F43AD /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1F092E142933C0EB000F43AD /* BasketView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				1F092DF92933BF3C000F43AD /* GeichaProjectApp.swift */,
-				1F092DFB2933BF3C000F43AD /* ContentView.swift */,
+				1F092E0F2933C0C6000F43AD /* Views */,
+				1F092E0E2933C0B4000F43AD /* ViewModel */,
+				1F092E0B2933C07D000F43AD /* Model */,
 				1F092DFD2933BF3E000F43AD /* Assets.xcassets */,
 				1F092DFF2933BF3E000F43AD /* Preview Content */,
 			);
@@ -67,6 +81,34 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1F092E0B2933C07D000F43AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F092E092933C079000F43AD /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1F092E0E2933C0B4000F43AD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F092E0C2933C0AD000F43AD /* Order.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1F092E0F2933C0C6000F43AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F092E142933C0EB000F43AD /* BasketView.swift */,
+				1F092E122933C0EB000F43AD /* ContentView.swift */,
+				1F092E102933C0EB000F43AD /* CheckBoxView.swift */,
+				1F092E112933C0EB000F43AD /* ItemRow.swift */,
+				1F092E132933C0EB000F43AD /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +119,7 @@
 				1F092DF22933BF3C000F43AD /* Sources */,
 				1F092DF32933BF3C000F43AD /* Frameworks */,
 				1F092DF42933BF3C000F43AD /* Resources */,
+				1F5F7239293D3703000E23F2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,12 +175,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F5F7239293D3703000E23F2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n    swiftlint\nelse \n    echo \"warning: Swiftlint not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F092DF22933BF3C000F43AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F092DFC2933BF3C000F43AD /* ContentView.swift in Sources */,
+				1F092E192933C0EB000F43AD /* BasketView.swift in Sources */,
+				1F092E182933C0EB000F43AD /* MainView.swift in Sources */,
+				1F092E152933C0EB000F43AD /* CheckBoxView.swift in Sources */,
+				1F092E172933C0EB000F43AD /* ContentView.swift in Sources */,
+				1F092E0A2933C079000F43AD /* DataModel.swift in Sources */,
+				1F092E162933C0EB000F43AD /* ItemRow.swift in Sources */,
+				1F092E0D2933C0AD000F43AD /* Order.swift in Sources */,
 				1F092DFA2933BF3C000F43AD /* GeichaProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
